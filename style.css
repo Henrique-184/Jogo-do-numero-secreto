@@ -2,31 +2,28 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: rgb(247, 247, 247);
+    color: white;
 }
- 
-body { 
-    background-image: url("img/VivianHugo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+
+body {
+    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
     height: 100vh;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
 body::before {
-    background-image: url("img/HugoPFP.png");
+    background-image: url("img/code.png");
     background-repeat: no-repeat;
-    background-size: 1000px;
     background-position: right;
     content: "";
-    display:block;
-    position:fixed;
-    width: 120%;
+    display: block;
+    position: absolute;
+    width: 100%;
     height: 100%;
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 .container {
@@ -36,9 +33,10 @@ body::before {
     align-items: center;
     justify-content: space-between;
     border-radius: 24px;
-    border: 2px solid #ad163c;
-    box-shadow: 4px 4px 20px 0px rgba(253, 254, 255, 0.432);
-    background-color: #00000046;
+    border: 1px solid #1875E8;
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+    background-image: url("img/Ruido.png");
+    background-size: 100% 100%;
     position: relative;
 }
 
@@ -57,7 +55,7 @@ body::before {
 
 .container__botao {
     border-radius: 16px;
-    background: #a50c3a;
+    background: #1875E8;
     padding: 16px 24px;
     width: 100%;
     font-size: 24px;
@@ -71,16 +69,16 @@ body::before {
 }
 
 .container__texto-azul {
-    color: #a50c3a;
+    color: #1875E8;
 }
 
 .container__input {
     width: 100%;
     height: 72px;
     border-radius: 16px;
-    background-color: #08080883;
+    background-color: #FFF;
     border: none;
-    color: #ffffff;
+    color: #1875E8;
     padding: 2rem;
     font-size: 24px;
     font-weight: 700;
@@ -109,7 +107,7 @@ button {
 }
 
 button:disabled {
-    background-color: rgb(104, 104, 104);
+    background-color: gray;
 }
 
 @media screen and (max-width: 1250px) {
